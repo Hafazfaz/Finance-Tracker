@@ -1,9 +1,17 @@
-import React from 'react';
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import Login from "./Login";
+import Dashboard from "./components/Dashboard";
+import TransactionForm from "./components/TransactionForm";
+import TransactionList from "./components/TransactionList";
+import Register from "./components/Register";
+import "./App.css";
 
-function App() {
+function Home() {
+  /* eslint-disable jsx-a11y/anchor-is-valid */
+
   return (
-    <div className="App">
+    <>
       {/* Navigation Bar */}
       <nav className="navbar">
         <div className="logo">Finance Tracker</div>
@@ -13,7 +21,7 @@ function App() {
           <li><a href="#features">Features</a></li>
           <li><a href="#pricing">Pricing</a></li>
           <li><a href="#contact">Contact</a></li>
-          <li><a href="#login">Login/Register</a></li>
+          <li><Link to="/login">Login/Register</Link></li>
         </ul>
         <div className="hamburger">
           <span></span>
@@ -80,7 +88,24 @@ function App() {
         </div>
         <p>Contact us: support@financetracker.com</p>
       </footer>
-    </div>
+    </>
+  );
+}
+
+function App() {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/register" element={<Register />} />
+
+        <Route path="/login" element={<Login />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+<Route path="/transaction-form" element={<TransactionForm />} />
+<Route path="/transaction-list" element={<TransactionList />} />
+        {/* Add more routes here if needed */}
+      </Routes>
+    </Router>
   );
 }
 

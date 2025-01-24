@@ -1,0 +1,25 @@
+.transaction-list-container {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .transaction-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+  }
+  
+  .transaction-table th, .transaction-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+  }
+  
+  .income {
+    background-color: #d4edda;
+  }
+  
+  .expense {
+    background-color: #f8d7da;
+  }
+  

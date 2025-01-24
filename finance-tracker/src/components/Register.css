@@ -1,0 +1,130 @@
+/* General styling for the register container */
+.register-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Styling for the card */
+  .register-card {
+    background: #fff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    animation: fadeIn 0.8s ease-in-out;
+  }
+  
+  /* Form title */
+  .register-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Input fields styling */
+  .input-group {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .input-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #444;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: border-color 0.3s ease-in-out;
+  }
+  
+  .input-group input:focus {
+    border-color: #6a11cb;
+    outline: none;
+  }
+  
+  /* Error and success messages */
+  .error-message {
+    color: #d9534f;
+    font-size: 14px;
+  }
+  
+  .success-message {
+    color: #28a745;
+    font-size: 14px;
+  }
+  
+  /* Register button styling */
+  .register-button {
+    background: #6a11cb;
+    color: white;
+    border: none;
+    padding: 15px 0;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 12px rgba(106, 17, 203, 0.5);
+  }
+  
+  .register-button:hover {
+    background: #5312c7;
+    transform: scale(1.05);
+  }
+  
+  /* Footer text */
+  .register-footer p {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .register-footer a {
+    color: #6a11cb;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .register-footer a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive design */
+  @media (max-width: 600px) {
+    .register-card {
+      width: 90%;
+      padding: 30px;
+    }
+  
+    .register-button {
+      font-size: 16px;
+      padding: 12px 0;
+    }
+  }
+  
