@@ -4,7 +4,11 @@ import Login from "./Login";
 import Dashboard from "./components/Dashboard";
 import TransactionForm from "./components/TransactionForm";
 import TransactionList from "./components/TransactionList";
+import about from "./assets/about.png";
 import Register from "./components/Register";
+import feature1 from "./assets/feature1.jpg";
+import feature2 from "./assets/feature2.jpg";
+import feature3 from "./assets/feature3.jpg";
 import "./App.css";
 
 function Home() {
@@ -44,24 +48,24 @@ function Home() {
         <section id="about" className="content-section">
           <h2>About Our App</h2>
           <p>Our finance tracker helps you stay on top of your financial health by tracking income, expenses, and budgets in real-time.</p>
-          <img src="/images/about.png" alt="About the app" />
+          <img src={about} alt="about us" width={500}/>
         </section>
 
         <section id="features" className="content-section">
           <h2>Features</h2>
           <div className="features-grid">
             <div className="feature-item">
-              <img src="/images/feature1.png" alt="Feature 1" />
+            <img src={feature1} alt="Feature 1" />
               <h3>Track Expenses</h3>
               <p>Keep a detailed record of your spending habits.</p>
             </div>
             <div className="feature-item">
-              <img src="/images/feature2.png" alt="Feature 2" />
+            <img src={feature2} alt="Feature 2" />
               <h3>Set Budgets</h3>
               <p>Plan your spending and avoid overspending.</p>
             </div>
             <div className="feature-item">
-              <img src="/images/feature3.png" alt="Feature 3" />
+            <img src={feature3} alt="Feature 3" />
               <h3>Generate Reports</h3>
               <p>Visualize your financial data with charts and graphs.</p>
             </div>

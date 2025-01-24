@@ -108,7 +108,7 @@ body {
 /* Hero Section */
 .hero {
   margin-top: 1rem;
-   background: url('images/hero-background.png') no-repeat center center/cover ; 
+   background: url('assets/hero-background.png') no-repeat center center/cover ; 
   color: black;
   text-align: center;
   padding: 3rem 1rem;
@@ -141,6 +141,7 @@ body {
 /* Main Content Sections */
 .main-content {
   padding: 2rem 1rem;
+  text-align: center;
 }
 
 .content-section {
