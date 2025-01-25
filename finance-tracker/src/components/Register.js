@@ -2,13 +2,20 @@ import React, { useState } from "react";
 import "./Register.css";
 
 function Register() {
+  // this code use react hook to set variable for username
   const [username, setUsername] = useState("");
+   // this code use react hook to set variable for email
   const [email, setEmail] = useState("");
+  // this code use react hook to set variable for password
   const [password, setPassword] = useState("");
+   // this code use react hook to set variable for confirmpassword
   const [confirmPassword, setConfirmPassword] = useState("");
+  // this code use react hook to set variable for error
   const [error, setError] = useState("");
+   // this code use react hook to set variable for successful message
   const [success, setSuccess] = useState("");
 
+  // This code handle the user registration validation
   const handleRegister = (e) => {
     e.preventDefault();
     if (password !== confirmPassword) {
@@ -89,5 +96,5 @@ function Register() {
     </div>
   );
 }
-
-export default Register;
+// This make the Register Component accessible to other  components.
+export default Register; 
